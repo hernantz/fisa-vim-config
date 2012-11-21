@@ -256,7 +256,7 @@ let g:tabman_focus  = 'tf'
 if &term =~? 'mlterm\|xterm\|screen-256'
 	let &t_Co = 256
     " color
-    colorscheme fisa
+    colorscheme default
 else
     " color
     colorscheme delek
