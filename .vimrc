@@ -287,3 +287,6 @@ let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 " to use fancy symbols for powerline, uncomment the following line and use a
 " patched font (more info on the README.rst)
 " let g:Powerline_symbols = 'fancy'
+
+" remove gvim toolbar"
+set guioptions-=T  
