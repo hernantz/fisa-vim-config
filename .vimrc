@@ -57,6 +57,8 @@ Bundle 'michaeljsmith/vim-indent-object'
 " Python mode (indentation, doc, refactor, lints, code checking, motion and
 " operators, highlighting, run and ipdb breakpoints)
 Bundle 'klen/python-mode'
+" Solarized color scheme 
+Bundle 'altercation/vim-colors-solarized'
 
 " Bundles from vim-scripts repos
 
@@ -271,7 +273,8 @@ endif
 
 " colors for gvim
 if has('gui_running')
-    colorscheme wombat
+    set background=light
+    colorscheme solarized
 endif
 
 " when scrolling, keep cursor 3 lines away from screen border
