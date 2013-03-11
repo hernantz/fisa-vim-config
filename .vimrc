@@ -297,3 +297,8 @@ set guioptions-=T
 " don't wrap lines and show this arrows if there is more content inline
 set nowrap
 set listchars=extends:❯,precedes:❮
+
+" shortcuts for moving to begining/end of line
+noremap H ^
+noremap L $
+vnoremap L g_
