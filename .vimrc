@@ -293,3 +293,7 @@ let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 
 " remove gvim toolbar"
 set guioptions-=T  
+
+" don't wrap lines and show this arrows if there is more content inline
+set nowrap
+set listchars=extends:❯,precedes:❮
