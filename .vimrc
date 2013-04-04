@@ -301,4 +301,7 @@ set listchars=extends:❯,precedes:❮
 " shortcuts for moving to begining/end of line
 noremap H ^
 noremap L $
-vnoremap L g_
+
+" delete to begining/end of the line
+noremap dH d^
+noremap dL d$
