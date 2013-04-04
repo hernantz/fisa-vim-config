@@ -59,6 +59,19 @@ Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'klen/python-mode'
 " Solarized color scheme 
 Bundle 'altercation/vim-colors-solarized'
+" Snippets manager (SnipMate) and snippets repos
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/snipmate-snippets"
+Bundle "garbas/vim-snipmate"
+" Git diff icons on the side of the file lines
+Bundle 'airblade/vim-gitgutter'
+" Relative numbering of lines (0 is the current line)
+" (disabled by default because is very intrusive and can't be easily toggled
+" on/off. When the plugin is present, will always activate the relative 
+" numbering every time you go to normal mode. Author refuses to add a setting 
+" to avoid that)
+" Bundle 'myusuf3/numbers.vim'
 
 " Bundles from vim-scripts repos
 
@@ -72,8 +85,6 @@ Bundle 'IndexedSearch'
 Bundle 'matchit.zip'
 " Gvim colorscheme
 Bundle 'Wombat'
-" Autocompletion inside search
-Bundle 'SearchComplete'
 " Yank history navigation
 Bundle 'YankRing.vim'
 
@@ -124,6 +135,7 @@ map tn :tabn<CR>
 map tp :tabp<CR>
 map tm :tabm 
 map tt :tabnew 
+map ts :tab split<CR>
 map <C-S-Right> :tabn<CR>
 imap <C-S-Right> <ESC>:tabn<CR>
 map <C-S-Left> :tabp<CR>
@@ -252,6 +264,7 @@ let g:pymode_rope = 0
 
 " rope (from python-mode) settings
 nmap ,d :RopeGotoDefinition<CR>
+nmap ,D :tab split<CR>:RopeGotoDefinition<CR>
 nmap ,o :RopeFindOccurrences<CR>
 
 " don't let pyflakes allways override the quickfix list
@@ -262,7 +275,7 @@ let g:tabman_toggle = 'tl'
 let g:tabman_focus  = 'tf'
 
 " use 256 colors when possible
-if &term =~? 'mlterm\|xterm\|screen-256'
+if &term =~? 'mlterm\|xterm\|xterm-256\|screen-256'
 	let &t_Co = 256
     " color
     colorscheme default
