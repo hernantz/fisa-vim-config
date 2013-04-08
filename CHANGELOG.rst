@@ -198,3 +198,13 @@ Changelog
 * Version 4.4.1
 
   * Small doc fixes
+
+* Version 4.4.2
+
+  * Updating references to plugin sources
+  * Small comment and quotes changes
+
+* Version 4.4.3
+
+  * SnipMate snippets repo was moved, updated it
+

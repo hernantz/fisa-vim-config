@@ -59,11 +59,11 @@ Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'klen/python-mode'
 " Solarized color scheme 
 Bundle 'altercation/vim-colors-solarized'
-" Snippets manager (SnipMate) and snippets repos
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "honza/snipmate-snippets"
-Bundle "garbas/vim-snipmate"
+" Snippets manager (SnipMate), dependencies, and snippets repo
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'honza/vim-snippets'
+Bundle 'garbas/vim-snipmate'
 " Git diff icons on the side of the file lines
 Bundle 'airblade/vim-gitgutter'
 " Relative numbering of lines (0 is the current line)
