@@ -106,9 +106,9 @@ set softtabstop=4
 set shiftwidth=4
 
 " tablength exceptions
-" autocmd FileType html setlocal shiftwidth=2 tabstop=2
-" autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2
-" autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 
 " always show status bar
 set ls=2
@@ -318,3 +318,12 @@ noremap L $
 " delete to begining/end of the line
 noremap dH d^
 noremap dL d$
+
+" save with Ctrl + S
+map <C-s> :w<cr>
+imap <C-s> <ESC>:w<cr>a
+
+" Insert a new-line after the current line by pressing Enter (Shift-Enter for
+" inserting a line before the current line)
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
