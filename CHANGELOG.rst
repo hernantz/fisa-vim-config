@@ -208,3 +208,100 @@ Changelog
 
   * SnipMate snippets repo was moved, updated it
 
+* Version 4.4.4
+
+  * Just updated the link to the CPMono font on the README
+
+* Version 4.5
+
+  * Added fuzzy command finder
+
+* Version 4.5.1
+
+  * Fixed 2 space tabs on html and javascript
+
+* Version 4.5.2
+
+  * ZenMode repo was moved, updated it
+
+* Version 5.0
+
+  * Replaced python-mode with jedi-vim plus some old removed plugins (pydoc, flake8, indentpython)
+  * Hidden YankRing history file
+  * Removed old legacy completion configs
+  * Fixed problems between jedi-vim and GitGutter
+  * Fixed problems between jedi-vim and SnipMate (to do this, had to change the SnipMate mapping)
+  * Fixed problems between jedi-vim and AutocomplPop
+
+* Version 5.0.1
+
+  * Fix tabs behaviour of go to definition
+
+* Version 5.0.2
+
+  * Fix trailing whitespaces cleaner regex
+
+* Version 5.0.3
+
+  * Fix fuzzy symbol finder map, changed jedi-vim go to assignment map
+  * Syntax highlighting on by default
+
+* Version 5.0.4
+
+  * Add mapping for ipdb breakpoints insert
+  * Removed default mappings of vim-debug
+  * Removed python-mode from the references (no longer used)
+
+* Version 5.1
+
+  * Replaced vim-powerline with vim-airline
+  * New font patching method
+  * Added screenshots to the repo
+  * Updated docs and screenshots
+
+* Version 5.2
+
+  * Added python imports sorter (**new python package dependency: isort**)
+
+* Version 5.3
+
+  * Fixed problem with SnipMate and AutocomplPop, changing the mapping for SnipMate
+
+* Version 6.0
+
+  * Back to python-mode, the (rope powered) completion is better than jedi-vim
+  * Removed a bunch of plugins that are replaced by python-mode
+  * SnipMate plugin mapping back to the default (``tab``)
+  * Replaced AutoComplPop with NeoComplCache, for better and fuzzy completion
+  * Removed isort python dependency, because the latest vim-isort includes it
+
+* Version 6.1
+
+  * Updated docs for font patching
+  * Updated setting name of python-mode
+
+* Version 6.2
+
+  * Fixed goto definition mappings (python-mode changed commands)
+
+* Version 6.3
+
+  * Fixed python linter mappings (python-mode changed commands)
+
+* Version 6.4
+
+  * Restored isort pip dependency, due to changes in vim-isort (**new python package dependency: isort**)
+
+* Version 6.5
+
+  * Added dragvisuals plugin and mappings/settings
+  * Persistent undos
+  * Mapping to open NERDTree positioned on the current file
+  * Moved temporary files to internal vim folders
+
+* Version 7.0
+
+  * Added window chooser plugin
+  * Replaced git-gutter with vim-signify
+  * Replaced pyflakes with syntastic
+  * Code polishing (sections, comments)
