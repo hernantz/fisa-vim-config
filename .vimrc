@@ -267,6 +267,8 @@ map <F12> :Dbg up<CR>
 
 " file finder mapping
 let g:ctrlp_map = ',e'
+" open buffers finder mapping
+nmap ,b :CtrlPBuffer<CR>
 " tags (symbols) in current file finder mapping
 nmap ,g :CtrlPBufTag<CR>
 " tags (symbols) in all files finder mapping
